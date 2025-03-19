@@ -1,13 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 import {
   FaBath,
   FaBed,
   FaMapMarker,
   FaMoneyBill,
   FaRulerCombined,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 const PropertyCard = ({ property }) => {
   const getRateDisplay = () => {
@@ -42,15 +42,15 @@ const PropertyCard = ({ property }) => {
 
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
           <p>
-            <FaBed className="inline mr-2" /> {property.beds}{" "}
+            <FaBed className="inline mr-2" /> {property.beds}{' '}
             <span className="md:hidden lg:inline">Beds</span>
           </p>
           <p>
-            <FaBath className="inline mr-2" /> {property.baths}{" "}
+            <FaBath className="inline mr-2" /> {property.baths}{' '}
             <span className="md:hidden lg:inline">Baths</span>
           </p>
           <p>
-            <FaRulerCombined className="inline mr-2" /> {property.square_feet}{" "}
+            <FaRulerCombined className="inline mr-2" /> {property.square_feet}{' '}
             <span className="md:hidden lg:inline">sqft</span>
           </p>
         </div>
@@ -82,8 +82,8 @@ const PropertyCard = ({ property }) => {
           <div className="flex align-middle gap-2 mb-4 lg:mb-0">
             <FaMapMarker className="mt-1 text-orange-700" />
             <span className="text-orange-700">
-              {" "}
-              {property.location.city} {property.location.state}{" "}
+              {' '}
+              {property.location.city} {property.location.state}{' '}
             </span>
           </div>
           <Link

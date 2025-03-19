@@ -1,11 +1,11 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import Logo from "@/assets/images/logo-white.png";
-import ProfileDefault from "@/assets/images/profile.png";
-import Link from "next/link";
-import { FaGoogle } from "react-icons/fa";
-import { usePathname } from "next/navigation";
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Logo from '@/assets/images/logo-white.png';
+import ProfileDefault from '@/assets/images/profile.png';
+import Link from 'next/link';
+import { FaGoogle } from 'react-icons/fa';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <Link
                   href="/"
                   className={`text-white ${
-                    pathname === "/" ? "bg-black" : ""
+                    pathname === '/' ? 'bg-black' : ''
                   } hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
                   Home
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <Link
                   href="/properties"
                   className={`text-white ${
-                    pathname === "/properties" ? "bg-black" : ""
+                    pathname === '/properties' ? 'bg-black' : ''
                   } hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                 >
                   Properties
@@ -78,7 +78,7 @@ const Navbar = () => {
                   <Link
                     href="/properties/add"
                     className={`text-white ${
-                      pathname === "/properties/add" ? "bg-black" : ""
+                      pathname === '/properties/add' ? 'bg-black' : ''
                     } hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
                   >
                     Add Property
@@ -199,7 +199,7 @@ const Navbar = () => {
             <Link
               href="/"
               className={`${
-                pathname === "/" ? "bg-black" : ""
+                pathname === '/' ? 'bg-black' : ''
               } text-white block rounded-md px-3 py-2 text-base font-medium`}
             >
               Home
@@ -207,7 +207,7 @@ const Navbar = () => {
             <Link
               href="/properties"
               className={`${
-                pathname === "/properties" ? "bg-black" : ""
+                pathname === '/properties' ? 'bg-black' : ''
               } text-white block rounded-md px-3 py-2 text-base font-medium`}
             >
               Properties
@@ -216,7 +216,7 @@ const Navbar = () => {
               <Link
                 href="/properties/add"
                 className={`${
-                  pathname === "/properties/add" ? "bg-black" : ""
+                  pathname === '/properties/add' ? 'bg-black' : ''
                 } text-white block rounded-md px-3 py-2 text-base font-medium`}
               >
                 Add Property
